@@ -1,0 +1,12 @@
+find . -name "*.aux" -type f -delete
+find . -name "*.log" -type f -delete
+find . -name "*.lof" -type f -delete
+find . -name "*.lot" -type f -delete
+find . -name "*.toc" -type f -delete
+find . -name "*.gz" -type f -delete
+find . -name "*.xml" -type f -delete
+find . -name "*.bbl" -type f -delete
+find . -name "*.blg" -type f -delete
+find . -name BA-Thesis-blx.bib -type f -delete
+find . -name "*.lol" -type f -delete
+find . -name "*.out" -type f -delete

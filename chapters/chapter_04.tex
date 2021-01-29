@@ -1,0 +1,266 @@
+\chapter{Test Methodology}
+\label{chapter:methodology}
+
+    To examine and answer the research question, several different tests and measurements are performed.
+    According to the research question, it was decided to perform measurements to gather insights on two topics.
+    First, as resources in the embedded automotive environment are restricted, OpenStack's introduced overhead has to be assessed.
+    Second, the performance of relevant resources should not be impacted too much, otherwise, OpenStack would not bring any additional value.
+    
+    \noindent All measurements were decided to be performed using micro-benchmarks and Linux command-line utilities.
+    The \textsl{Phoronix-Test-Suite}\footnote{Phoronix Test Suite: https://www.phoronix-test-suite.com}, together with the utilities \textsl{ping} and \textsl{sysstat}\footnote{Sysstat Benchmark: https://github.com/sysstat/sysstat}, were chosen to be used.
+    As the measurements aim to observe OpenStack’s impact, two measurements are obtained for each host configuration. 
+    The first measurement is performed on the freshly installed hardware natively, without any OpenStack services.
+    The second measurement is performed inside an OpenStack \ac{VM} running on the same host.
+    The percentage overhead is calculated according to Equation \ref{equ:overhead}.
+    However, both, the percentage overhead and the absolute difference between the native and VM values are considered.
+    
+    \begin{equation}
+    \label{equ:overhead}
+        \text{Overhead} = \abs{1 - \frac{\text{VM Performance}}{\text{Native Performance}}}
+    \end{equation}
+    
+    \noindent To achieve the best comparability between native and VM values, the \acp{VM} are configured in a way to match the host's system configuration as much as possible.
+    This is achieved using the according \textsl{max}-flavor.
+    Table \ref{table:machine_configs} shows the native and the \ac{VM} resources used.
+    The R-Car \ac{VM} uses only four cores due to \ac{KVM}'s limitations, as explained in Section \ref{subsection:openstack_installation}.
+    The chosen configuration of the \textsl{max}-flavor, although slightly lower than the native one, was found to function the most reliable.
+    Additionally, Listing \ref{listing:install_tests} shows the commands to obtain and install all necessary tools and utilities for testing.
+    
+    \begin{table}[ht]
+        \begin{center}
+            \begin{tabular}{c|c|c}
+                \textbf{Resource} 	& \textbf{Renesas R-Car} 	& \textbf{Intel Xeon} \\
+                \noalign{\hrule height 1.5pt}
+                \begin{tabular}{c} \\ CPU \\Disk \\ Memory \end{tabular} 
+                &
+                \begin{tabular}{c|c} 
+                    native & virtual \\
+                    \noalign{\hrule height 1pt}
+                    8 cores & 4 cores \\
+                    59GB & 55GB \\
+                    2GB & 4GB
+                \end{tabular}
+                &
+                \begin{tabular}{c|c} 
+                    native & virtual \\
+                    \noalign{\hrule height 1pt}
+                    48 cores & 48 cores \\
+                    980GB & 850GB \\
+                    188GB & 170GB
+                \end{tabular}
+            \end{tabular}
+        \caption{Configuration of native and virtual machines for overhead measurements}
+        \label{table:machine_configs}
+        \end{center}        
+    \end{table}
+    
+    \begin{listing}[ht]
+         \inputminted[frame=single, linenos, breaklines]{bash}{measurements/00_install-execute/04_install.sh}
+        \caption{Linux commands for installing all test utilities}
+        \label{listing:install_tests}
+    \end{listing}
+      
+    %----------------------------------------------------------------------------------------
+    % Idle Usage
+    %----------------------------------------------------------------------------------------
+    \section{Idle Resource Consumption}
+    \label{section:methodology_idle}
+   
+        OpenStack naturally introduces an unavoidable overhead.
+        First, OpenStack's fundamental overhead introduced to the \ac{CPU} and memory is considered.
+        While providing the OpenStack functionality, several additional processes are running.
+        Consuming resources like \ac{CPU} and memory, if the idle overhead of the OpenStack services is too high, OpenStack would be unreasonable on such hardware.
+        
+        \noindent The hereby measured values are the \ac{CPU} and memory usage.
+        As a baseline measurement, the system's \ac{CPU} and memory usage is measured and recorded every 5 seconds for a total of 500 seconds.
+        The CPU usage values are gathered using the command ”sar 1 5”, which returns the average CPU usage during 5 seconds in percent, measured every second. 
+        The memory usage is gathered from the \textsl{meminfo}-file in the \textsl{/proc}-directory.
+        Containing the total memory value \textsl{MemTotal} and the currently free memory value \textsl{FreeMem}, the currently used memory can be calculated.\\
+        For comparison, the OpenStack services are installed, and the same measurements are repeated with a minor adjustment.
+        In advance, a \ac{VM} is created on the system under test and switched off.
+        The measurements are taken in the same manner, except that after 200 seconds, the \ac{VM} is started.
+        These measurements first enable gathering insights on the overhead of OpenStack’s services when running in an idle state. 
+        Secondly, insights on the overhead during a VM's startup and its provisioning in an idle state without any load are gathered.
+        Listing \ref{listing:idle_test} shows the bash-script used to gather the information with running OpenStack services.
+        For gathering the baseline values, the same script without lines 8-11 is used.
+
+        \begin{listing}[ht]
+            \inputminted[frame=single, linenos, breaklines]{bash}{measurements/00_install-execute/04_startup.sh}
+            \caption{Bash-Script for gathering CPU and memory usage values}
+            \label{listing:idle_test}
+        \end{listing}
+
+    
+    \section{Resource Performance Measurements}
+    \label{subsection:methodology_impact}
+        
+        To further determine whether OpenStack's overhead is substantial or not, the impact on four core resources is examined.   
+        Relevant resources in the context of embedded systems and Cloud Computing are the \ac{CPU}, memory, storage, and the network \cite{Gillam2013,Kominos2017,Kang2017,Vedam2012,Tesfatsion2018}.
+       
+        %----------------------------------------------------------------------------------------
+        %	CPU Performance
+        %----------------------------------------------------------------------------------------
+        \subsection{CPU Performance}
+        \label{subsection:methodology_cpu}
+        
+            While gaining advantages through \acp{VM}, as little as possible computational performance should be sacrificed.
+            Through virtualizing the \ac{CPU} although, a particular overhead is introduced.
+            Depending on the application, instructions from the \ac{VM} have to be processed first by the hypervisor, and only then can they be executed on the hardware.
+            The performance impact must not be high, otherwise, computations inside \acp{VM} would not be realizable or require enormous host resources.
+            
+            \noindent To measure the \ac{CPU} overhead, a compilation of the Linux kernel is performed, and the time needed is used as a performance indicator.
+            The benchmark \textsl{Timed Linux Kernel Compilation}\footnote{Timed Linux Kernel Compilation Benchmark: https://openbenchmarking.org/test/pts/build-linux-kernel} from the Phoronix-Test-Suite is used to perform this measurement.
+            Listing \ref{listing:cpu_test} shows the command to execute the test.
+            The compilations' speed can be significantly increased by using multiple threads, for example, using one thread per core.
+            This makes the test also suitable to examine multicore performance and parallel workloads.
+            
+            \noindent To evaluate the platform as good as possible, the following decisions were made regarding the \ac{vCPU} configuration.
+            Having 24 identical cores with hyper-threading, the Intel Xeon CPU is perceived as a 48 core \ac{CPU}.
+            The cores' equality enables \ac{KVM} to also manage VMs with up to 48 \acp{vCPU}, which was chosen for the test VM on the x86 platform. \\
+            The Renesas R-Car \ac{SoC} being an ARM SoC with big.LITTLE architecture consists of eight cores.
+            Due to \acp{KVM} limitation to only virtualize the same types of cores simultaneously, the highest number of \acp{vCPU} for a virtual machine is reduced to four cores.
+            Therefore, the native compilation on the R-Car is also performed using four threads instead of eight to achieve comparable results.
+            Using the same number of threads as CPU cores, the CPU is utilized to 100\%, creating a maximum stress scenario.            
+            
+            \begin{listing}[ht]
+                \inputminted[frame=single, linenos, breaklines]{bash}{measurements/00_install-execute/04_cpu.sh}
+                \caption{Command for executing the CPU performance test}
+                \label{listing:cpu_test}
+            \end{listing}
+
+
+        %----------------------------------------------------------------------------------------
+        %	Storage Performance
+        %----------------------------------------------------------------------------------------
+        \subsection{Secondary Storage Performance}
+        \label{subsection:methodology_storage}
+            
+            As storage and retrieval of data become more important, the secondary storage performance must not be a bottleneck.
+            Again, through OpenStack as an additional middleware layer between the application inside a \ac{VM}, and the actual storage device, data must pass through more instances, which affects performance.
+            This could throttle the computation by the \ac{CPU} or even prevent any computations in reasonable time frames. 
+            
+            \noindent Performance in the area of storage can be defined by the throughput parameter.
+            The term throughput describes the amount of data that can be written or read from storage in a specific amount of time, for example, per second.
+            While storage performance should not correlate to the storage's actual size, the \ac{VM} storage was nevertheless chosen to be as close to the original size as possible.
+            For measuring the throughput, the \textsl{FIO} benchmark\footnote{FIO Benchmark: https://git.kernel.dk/cgit/fio/} of the Phoronix-Test-Suite was chosen because of its high configurability and recommendation \cite{OpenStackHTG2016}.
+            To evaluate the available storage speed, values for sequential read and write operations are measured, as these reflect the most common operations.
+            Listing \ref{listing:disk_test} shows the command for the test execution, which is performed on all systems without buffering and using the direct mode to avoid caching effects.
+            
+            \begin{listing}[ht]
+                \inputminted[frame=single, linenos, breaklines]{bash}{measurements/00_install-execute/04_disk.sh}
+                \caption{Command for executing the storage performance test}
+                \label{listing:disk_test}
+            \end{listing}
+
+
+        %----------------------------------------------------------------------------------------
+        %	Memory Performance
+        %----------------------------------------------------------------------------------------
+        \subsection{Memory Performance}
+        \label{subsection:methodology_memory}
+        
+            Today's application execution takes mainly place from memory.
+            Therefore, memory performance contributes a major part to the computational performance of a system.
+            Similarly to the processor, as little as possible, performance sacrifices are desired, so OpenStack's impact on the memory should especially be as low as possible.
+            
+            \noindent For evaluating the memory's performance, again, the throughput of the memory can be considered.
+            Depending on the memory's throughput, more or fewer operations are possible, and more or fewer data can be processed.
+            To measure the memory's throughput, the \textsl{Stream} benchmark\footnote{Stream Benchmark: http://www.cs.virginia.edu/stream/} \cite{McCalpin1995} from the Phoronix-Test-Suite is used.
+            This benchmark was also chosen because of its recommendations \cite{OpenStackHTG2016}.
+            Table \ref{table:stream_kernels} shows the operations performed by the benchmark to measure the memory's throughput.
+            Although the test also evaluates the throughput of a memory copy operation, this operation is not considered in this thesis for two reasons.
+            First, memory copy operations are less common in embedded programming and embedded applications because of memory wastage.
+            The usage of pointers and value passing by reference is more common and preferred so that zero-copy memory can be achieved.
+            Second, the computational performance is more in focus, which is represented by the chosen operations.
+            Like the kernel compilation, this benchmark also uses multiple cores and executes one thread per core by default.
+            As described previously, being able to equip the R-Car \ac{VM} with only four cores, the benchmark is natively also executed using only four instead of eight threads.
+            Listing \ref{listing:memory_test} shows the according command to execute the test.
+            Additionally, the \acp{VM} memory was chosen not to be 100\% of the native hardware but a bit less.
+            This should prevent the \ac{VM}'s from being killed by the host system due to using too much memory when it should become rare.
+            However, this should not impact the memory’s performance while enabling the host system to run with enough memory. 
+            
+            \begin{table}[ht]
+                \begin{center}
+                    \begin{tabular}{l|l}
+                        \textbf{Kernel Name} & \textbf{Operation} \\
+                        \noalign{\hrule height 1.5pt}
+                        Copy 		& $a(i) = b(i)$ \\
+                        Scale 	& $a(i) = q \cdot b(i )$\\
+                        Add 		& $a(i) = b(i) + c(i)$
+                    \end{tabular}
+                \caption[Vector operations of the Stream memory benchmark]{Vector operations of the stream memory benchmark \cite{McCalpin1995}}
+                \label{table:stream_kernels}
+                \end{center}        
+            \end{table}
+            
+             \begin{listing}[h]
+                \inputminted[frame=single, linenos, breaklines]{bash}{measurements/00_install-execute/04_memory.sh}
+                \caption{Command for executing the memory performance test}
+                \label{listing:memory_test}
+            \end{listing}
+
+        %----------------------------------------------------------------------------------------
+        %	Network Performance
+        %----------------------------------------------------------------------------------------
+        \subsection{Network Performance}
+        
+            Communication between different instances and \acp{ECU} takes place over the network, and therefore its performance as well must not be degraded too much.
+            Performance in terms of networking can be defined by two values: throughput and latency.
+            Throughput again refers to the amount of data that can be sent or received in a particular time interval.
+            Latency, on the other hand, refers to the duration between the emit of a packet and its reception at the destination.
+            All network tests are only performed inside the test network to receive reliable and uninfluenced results.
+            
+            \noindent To measure both values, two different tests are performed.
+            For throughput measurement the \textsl{Netperf} benchmark\footnote{Netperf Benchmark: https://github.com/HewlettPackard/netperf} from the Phoronix-Test-Suite is used.
+            This benchmark measures the throughput during a TCP file send and TCP stream between client and server and vice versa.
+            For latency measurement, the standard Linux command-line utility \textsl{Ping} is used. 
+            For 100 seconds, every second a ping is sent, and the average response time of all pings is considered.
+            Both tests require a counterpart for the system under test to communicate with.
+            Table \ref{table:network_counterparts} shows the systems under test and the hosts used as Netperf-Server and Ping-Partner.
+            Listing \ref{listing:network_test} shows the commands for the network tests execution.
+            
+            \begin{table}[ht]
+                \begin{center}
+                    \begin{tabular}{l|l|l}
+                        \textbf{System} 		& \textbf{Netperf-Server} 	& \textbf{Ping-Partner} \\
+                        \noalign{\hrule height 1.5pt}
+                        R-Car compute	&  Xeon compute	& Gateway, Xeon controller \\
+                        Xeon compute 	&  Xeon compute	& Gateway, Xeon controller \\
+                        Xeon 	controller 	&  Xeon controller	& Gateway, Xeon compute
+                    \end{tabular}
+                \caption{Network test hosts and their counterparts}
+                \label{table:network_counterparts}
+                \end{center}        
+            \end{table}
+            
+             \begin{listing}[ht]
+                \inputminted[frame=single, linenos, breaklines]{bash}{measurements/00_install-execute/04_network.sh}
+                \caption{Commands for executing the network performance tests}
+                \label{listing:network_test}
+            \end{listing}
+
+    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            

@@ -1,0 +1,40 @@
+
+
+{
+    "title": "mem-test-v1",
+    "results": [
+        {
+            "test": "pts\/stream-1.3.1",
+            "arguments": "Type: Scale",
+            "units": "MB\/s",
+            "results": {
+                "mem-test-v1": {
+                    "value": "68882.5",
+                    "all_results": "68905.9:69075.4:68820.4:68840.9:68769.7"
+                }
+            }
+        },
+        {
+            "test": "pts\/stream-1.3.1",
+            "arguments": "Type: Triad",
+            "units": "MB\/s",
+            "results": {
+                "mem-test-v1": {
+                    "value": "76515.5",
+                    "all_results": "76444.8:76819.3:76425.7:76486.6:76401.3"
+                }
+            }
+        },
+        {
+            "test": "pts\/stream-1.3.1",
+            "arguments": "Type: Add",
+            "units": "MB\/s",
+            "results": {
+                "mem-test-v1": {
+                    "value": "76314.1",
+                    "all_results": "76248.5:76533.2:76224.3:76277.4:76287.2"
+                }
+            }
+        }
+    ]
+}

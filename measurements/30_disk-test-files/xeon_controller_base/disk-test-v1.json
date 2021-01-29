@@ -1,0 +1,51 @@
+
+
+{
+    "title": "disk-test-v1",
+    "results": [
+        {
+            "test": "pts\/fio-1.14.1",
+            "arguments": "Type: Sequential Read - Engine: Linux AIO - Buffered: No - Direct: Yes - Block Size: 128KB - Disk Target: Default Test Directory",
+            "units": "MB\/s",
+            "results": {
+                "disk-test-v1": {
+                    "value": "2555",
+                    "all_results": "2557:2555:2554"
+                }
+            }
+        },
+        {
+            "test": "pts\/fio-1.14.1",
+            "arguments": "Type: Sequential Read - Engine: Linux AIO - Buffered: No - Direct: Yes - Block Size: 128KB - Disk Target: Default Test Directory",
+            "units": "IOPS",
+            "results": {
+                "disk-test-v1": {
+                    "value": "20400",
+                    "all_results": "20400:20400:20400"
+                }
+            }
+        },
+        {
+            "test": "pts\/fio-1.14.1",
+            "arguments": "Type: Sequential Write - Engine: Linux AIO - Buffered: No - Direct: Yes - Block Size: 128KB - Disk Target: Default Test Directory",
+            "units": "MB\/s",
+            "results": {
+                "disk-test-v1": {
+                    "value": "987",
+                    "all_results": "987:987:987"
+                }
+            }
+        },
+        {
+            "test": "pts\/fio-1.14.1",
+            "arguments": "Type: Sequential Write - Engine: Linux AIO - Buffered: No - Direct: Yes - Block Size: 128KB - Disk Target: Default Test Directory",
+            "units": "IOPS",
+            "results": {
+                "disk-test-v1": {
+                    "value": "7888",
+                    "all_results": "7890:7892:7883"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,296 @@
+%###################################################
+%
+%	=>	CONFIGURATION
+%
+%###################################################
+\documentclass[
+    10pt,
+    english,
+    twoside,
+    titlepage
+]{report}
+
+%----------------------------------------------------------------------------------------
+%	Packages Used
+%----------------------------------------------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage{geometry} 
+\usepackage{amsmath}
+\usepackage{commath}
+\usepackage{amssymb}
+\usepackage{afterpage}
+\usepackage{lmodern} 
+\usepackage{sansmath}
+\usepackage{microtype}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{tocloft}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{svg}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[newfloat]{minted}
+\usepackage[hidelinks]{hyperref}
+\usepackage{makecell}
+\usepackage{float}
+\usepackage[section]{placeins}
+\usepackage[withpage]{acronym}
+\usepackage[titletoc]{appendix}
+\usepackage[bottom]{footmisc}
+\captionsetup[listing]{position=bottom,skip=-8pt}
+\usepackage[backend=bibtex, style=numeric-comp]{biblatex}
+
+%----------------------------------------------------------------------------------------
+%	Geometry Settings 
+%----------------------------------------------------------------------------------------
+\geometry{
+    paper=a4paper,
+    hmarginratio=1:1,
+    top=2.5cm,
+    bottom=2.5cm,
+    %showframe,         		
+}
+
+%----------------------------------------------------------------------------------------
+%	Header and Footer
+%----------------------------------------------------------------------------------------
+\fancypagestyle{empty}{
+    \fancyhf{}
+    \renewcommand{\headrulewidth}{0pt}
+    \renewcommand{\footrulewidth}{0pt}
+}
+\fancypagestyle{plain}{
+    \fancyhf{}
+    \fancyfoot[CE,CO]{\thepage}
+    \renewcommand{\headrulewidth}{0pt}
+    \renewcommand{\footrulewidth}{1pt}
+}
+\fancypagestyle{body}{
+    \fancyhf{}
+    \fancyhead[LO]{\leftmark}
+    \fancyhead[RE]{\rightmark}
+    \fancyfoot[CE,CO]{\thepage}
+    \renewcommand{\headrulewidth}{1pt}
+    \renewcommand{\footrulewidth}{1pt}
+}
+
+%----------------------------------------------------------------------------------------
+%	Color Settings
+%----------------------------------------------------------------------------------------
+\definecolor{thi_blue}{RGB}{0, 90, 155}
+
+%----------------------------------------------------------------------------------------
+%	Commands
+%----------------------------------------------------------------------------------------
+\renewcommand{\cfttoctitlefont}{\color{thi_blue}\normalfont\bfseries\Huge}
+\renewcommand{\cftloftitlefont}{\color{thi_blue}\normalfont\bfseries\Huge}
+\renewcommand{\cftlottitlefont}{\color{thi_blue}\normalfont\bfseries\Huge}
+\renewcommand{\abstractname}{\color{thi_blue}\normalfont\bfseries\Huge Abstract}
+\renewcommand{\contentsname}{Table of Contents}
+\renewcommand{\cftchapdotsep}{\cftdotsep}
+\renewcommand{\cftchapleader}{\cftdotfill{\cftchapdotsep}}
+\newcommand{\blankpage}{\null\thispagestyle{empty}\newpage}
+
+%----------------------------------------------------------------------------------------
+%	Font Settings
+%----------------------------------------------------------------------------------------
+\raggedbottom
+\sansmath
+\setcounter{secnumdepth}{3}
+\titleformat{\chapter}{\color{thi_blue}\normalfont\bfseries\Huge}{\thechapter.}{10pt}{}
+\titleformat*{\section}{\LARGE\bfseries}
+\titleformat*{\subsection}{\Large\bfseries}
+\titleformat*{\subsubsection}{\large\bfseries}
+\setminted{fontsize=\small}
+\setlength{\parskip}{6pt}
+
+%----------------------------------------------------------------------------------------
+%	Float Settings
+%----------------------------------------------------------------------------------------
+\setlength{\textfloatsep}{3pt}
+\setlength{\floatsep}{3pt}
+\setlength{\intextsep}{9pt}
+
+
+%----------------------------------------------------------------------------------------
+%	Picture Settings
+%----------------------------------------------------------------------------------------
+\graphicspath{{pictures/}}
+
+%----------------------------------------------------------------------------------------
+%	Reference Settings
+%----------------------------------------------------------------------------------------
+\addbibresource{literature/references.bib}
+
+
+%###################################################
+%
+%	=>	DOKUMENT
+%
+%###################################################
+\begin{document}
+\pagestyle{fancy}
+\pagenumbering{Roman}
+
+%----------------------------------------------------------------------------------------
+%	TITLEPAGE
+%----------------------------------------------------------------------------------------
+\newgeometry{inner=2.5cm, outer=2.5cm, top=2.5cm, bottom=2.5cm}
+\begin{titlepage}
+    \begin{center}
+    
+        \includegraphics[height=0.2\textwidth]{00_thi-logo.pdf}
+        \hfill
+        \includegraphics[height=0.2\textwidth]{00_bmw-logo.pdf}
+        
+        \vfill
+        
+        \textsc{\LARGE Technische Hochschule Ingolstadt\\}
+        \vspace*{.04\textheight}
+        \textsc{\Large Bachelor's Thesis\\}
+        \vspace*{.04\textheight}
+        \hrule
+        \vspace*{.015\textheight}
+        {\huge \bfseries \color{thi_blue} Evaluation of OpenStack as Middleware\\ for Automotive Embedded Systems \par}
+        \vspace*{.015\textheight}
+        \hrule
+        \vspace*{.04\textheight}
+        \textsc{\Large Author: Max Malinowski}
+        
+        \vfill
+        
+        \textit{\large A thesis submitted in fulfillment of the}\\[0.2cm]
+        \textit{\large requirements for the degree}\\[0.2cm]
+        \textbf{\large Bachelor of Science}\\[0.2cm]
+        \textit{\large in the course of studies}\\[0.2cm]
+        \textbf{\large Aircraft and Vehicle Informatics}\\[0.2cm]
+        \textit{\large of the faculty}\\[0.2cm]
+        \textbf{\large Computer Science}
+        
+        \vfill
+        
+        \begin{tabular}{rl}
+        	\textbf{\large First Examiner:} 	 	& \large Prof. Dr. rer. nat. Christian Facchi\\[0.1cm]
+        	\textbf{\large Second Examiner:} 	& \large Prof. Dr. rer. nat. Ulrich Margull\\[0.1cm]
+        	\textbf{\large Supervisor:} 			& \large Dr. Ing. Dominik Reinhardt\\[0.1cm]
+        	\textbf{\large Issued on:} 			& \large 23.11.2020\\[0.1cm]
+        	\textbf{\large Submitted on:} 		& \large 29.01.2021\\
+         \end{tabular}
+    
+    \end{center}
+\end{titlepage}
+\restoregeometry
+\pagestyle{empty}
+\cleardoublepage
+
+
+%----------------------------------------------------------------------------------------
+%	DECLARATION
+%----------------------------------------------------------------------------------------
+\pagestyle{body}
+\linespread{1.3}
+\setcounter{page}{5}
+\chapter*{Declaration of Authorship}
+
+\large I, Max Malinowski, hereby declare that this thesis is my own work, that I have not presented it elsewhere for examination purposes, and that I have not used any sources or aids other than those stated. I have marked verbatim and indirect quotations as such. 
+
+\vfill
+
+\begin{tabular}{ccc}
+    \makebox[2.5in]{\dotfill} && 	\makebox[2.5in]{\dotfill}\\
+    Date				&& 	Max Malinowski\\[2cm]
+\end{tabular}
+
+\pagestyle{empty}
+\cleardoublepage
+
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT
+%----------------------------------------------------------------------------------------
+\pagestyle{body}
+\phantomsection
+\begin{abstract}
+    \centering
+    \thispagestyle{plain}
+    \setcounter{page}{7}
+    
+    \noindent Cloud Computing is already in extensive use by many car manufacturers in their backend, providing scalability, performance, and availability. 
+    However, the in-vehicle software is still definitely bound and statically executed on particular hardware. 
+    This thesis explores the basic feasibility and performance of operating an OpenStack cloud on automotive hardware for in-vehicle use. 
+    For evaluation, the introduced overhead and the cases of VM distribution and VM migration are considered and examined. 
+    Two automotive ARM SoCs and two high-performance x86 platforms are used for measurements and evaluation. 
+    The results indicate that on both hardware, OpenStack is executable and operable. 
+    On performable hardware, the results reveal OpenStack to introduce a low overhead and function reliably. 
+    However, low resources can influence OpenStack’s performance. 
+    Furthermore, VM migration and distribution were found to be practicable, although not for real-time applications. 
+    
+\end{abstract}
+\newpage
+
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+\thispagestyle{body}
+\tableofcontents
+\thispagestyle{body}
+\pagestyle{empty}
+\cleardoublepage
+
+
+%----------------------------------------------------------------------------------------
+%	GLOSSARY
+%----------------------------------------------------------------------------------------
+\pagestyle{body}
+\phantomsection
+\addcontentsline{toc}{chapter}{Abbreviations}
+\include{chapters/glossary}
+
+%----------------------------------------------------------------------------------------
+%	LIST OF FIGURES, TABLES AND LISTINGS
+%----------------------------------------------------------------------------------------
+\pagestyle{body}
+\phantomsection
+\addcontentsline{toc}{chapter}{List of Figures}
+\listoffigures\newpage
+
+\phantomsection
+\addcontentsline{toc}{chapter}{List of Tables}
+\listoftables
+
+\phantomsection
+\addcontentsline{toc}{chapter}{List of Listings}
+\listoflistings
+\newpage
+
+
+%----------------------------------------------------------------------------------------
+%	CHAPTERS
+%----------------------------------------------------------------------------------------
+\pagenumbering{arabic}
+\include{chapters/chapter_01}
+\include{chapters/chapter_02}
+\include{chapters/chapter_03}
+\include{chapters/chapter_04}
+\include{chapters/chapter_05}
+\include{chapters/chapter_06}
+\include{chapters/chapter_07}
+\newpage
+
+
+%----------------------------------------------------------------------------------------
+%	REFERENCES
+%----------------------------------------------------------------------------------------
+\printbibliography[title=References, heading=bibintoc]
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	APPENDIX
+%----------------------------------------------------------------------------------------
+\include{chapters/appendix}
+\newpage
+  
+  
+\end{document}

@@ -1,0 +1,51 @@
+
+
+{
+    "title": "net-test-v1",
+    "results": [
+        {
+            "test": "pts\/netperf-1.0.4",
+            "arguments": "Server: 10.1.1.101 - Test: TCP Send File - Duration: 10 Seconds",
+            "units": "Megabits\/sec Throughput",
+            "results": {
+                "net-test-v1": {
+                    "value": "9326.53",
+                    "all_results": "9334.11:9323.06:9322.42"
+                }
+            }
+        },
+        {
+            "test": "pts\/netperf-1.0.4",
+            "arguments": "Server: 10.1.1.101 - Test: TCP Request Response - Duration: 10 Seconds",
+            "units": "Transaction Rate Per Second",
+            "results": {
+                "net-test-v1": {
+                    "value": "8764.08",
+                    "all_results": "8697.03:8707.93:8887.29"
+                }
+            }
+        },
+        {
+            "test": "pts\/netperf-1.0.4",
+            "arguments": "Server: 10.1.1.101 - Test: TCP Stream - Client To Server - Duration: 10 Seconds",
+            "units": "Megabits\/sec Throughput",
+            "results": {
+                "net-test-v1": {
+                    "value": "9366.88",
+                    "all_results": "9369.14:9369.24:9362.27"
+                }
+            }
+        },
+        {
+            "test": "pts\/netperf-1.0.4",
+            "arguments": "Server: 10.1.1.101 - Test: TCP Stream - Server To Client - Duration: 10 Seconds",
+            "units": "Megabits\/sec Throughput",
+            "results": {
+                "net-test-v1": {
+                    "value": "9323.93",
+                    "all_results": "9312.82:9318.73:9340.23"
+                }
+            }
+        }
+    ]
+}

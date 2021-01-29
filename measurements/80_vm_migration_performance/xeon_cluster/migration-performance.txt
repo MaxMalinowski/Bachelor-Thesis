@@ -1,0 +1,2077 @@
+NEW MEASUREMENTS - 1607683859.5473168
+
+1607683861.6052608
+    events per second:  7045.54
+         avg:                                  0.85
+
+---
+
+1607683863.6087656
+    events per second:  7059.69
+         avg:                                  0.85
+
+---
+
+1607683865.6105206
+    events per second:  7046.51
+         avg:                                  0.85
+
+---
+
+1607683867.612599
+    events per second:  7049.18
+         avg:                                  0.85
+
+---
+
+1607683869.6152844
+    events per second:  7049.32
+         avg:                                  0.85
+
+---
+
+1607683871.6181326
+    events per second:  6864.30
+         avg:                                  0.87
+
+---
+
+1607683873.6213186
+    events per second:  7028.90
+         avg:                                  0.85
+
+---
+
+1607683875.6243165
+    events per second:  6815.12
+         avg:                                  0.88
+
+---
+
+1607683877.6261513
+    events per second:  6785.33
+         avg:                                  0.88
+
+---
+
+1607683879.6305175
+    events per second:  7038.15
+         avg:                                  0.85
+
+---
+
+1607683881.6325166
+    events per second:  7059.94
+         avg:                                  0.85
+
+---
+
+1607683883.6359556
+    events per second:  7024.65
+         avg:                                  0.85
+
+---
+
+1607683885.6385858
+    events per second:  7043.47
+         avg:                                  0.85
+
+---
+
+1607683887.6404657
+    events per second:  7030.23
+         avg:                                  0.85
+
+---
+
+1607683890.7323892
+    events per second:  7015.57
+         avg:                                  0.85
+
+---
+
+1607683892.7341044
+    events per second:  7043.03
+         avg:                                  0.85
+
+---
+
+1607683894.7366183
+    events per second:  7020.62
+         avg:                                  0.85
+
+---
+
+1607683896.7412572
+    events per second:  7035.21
+         avg:                                  0.85
+
+---
+
+1607683898.743575
+    events per second:  7046.10
+         avg:                                  0.85
+
+---
+
+1607683900.7469223
+    events per second:  7054.64
+         avg:                                  0.85
+
+---
+
+1607683902.7498276
+    events per second:  7043.37
+         avg:                                  0.85
+
+---
+
+1607683904.7530959
+    events per second:  7053.29
+         avg:                                  0.85
+
+---
+
+1607683906.7550573
+    events per second:  7051.15
+         avg:                                  0.85
+
+---
+
+1607683908.758043
+    events per second:  7044.92
+         avg:                                  0.85
+
+---
+
+1607683910.760614
+    events per second:  7036.05
+         avg:                                  0.85
+
+---
+
+1607683912.762864
+    events per second:  7035.28
+         avg:                                  0.85
+
+---
+
+1607683914.7657144
+    events per second:  7051.17
+         avg:                                  0.85
+
+---
+
+1607683916.7677295
+    events per second:  7042.15
+         avg:                                  0.85
+
+---
+
+1607683918.7707572
+    events per second:  7033.64
+         avg:                                  0.85
+
+---
+
+1607683920.7737825
+    events per second:  7035.47
+         avg:                                  0.85
+
+---
+
+1607683922.6895127
+    events per second:  7057.55
+         avg:                                  0.85
+
+---
+
+1607683924.6922812
+    events per second:  7032.17
+         avg:                                  0.85
+
+---
+
+1607683926.6952755
+    events per second:  6990.78
+         avg:                                  0.85
+
+---
+
+1607683928.7005208
+    events per second:  7052.41
+         avg:                                  0.85
+
+---
+
+1607683930.7028434
+    events per second:  7032.20
+         avg:                                  0.85
+
+---
+
+1607683932.705397
+    events per second:  7035.39
+         avg:                                  0.85
+
+---
+
+1607683934.7080162
+    events per second:  7028.54
+         avg:                                  0.85
+
+---
+
+1607683936.7100303
+    events per second:  7031.29
+         avg:                                  0.85
+
+---
+
+1607683938.7141204
+    events per second:  7030.81
+         avg:                                  0.85
+
+---
+
+1607683940.7149947
+    events per second:  6846.96
+         avg:                                  0.87
+
+---
+
+1607683942.7182689
+    events per second:  7031.68
+         avg:                                  0.85
+
+---
+
+1607683944.7198122
+    events per second:  7018.16
+         avg:                                  0.85
+
+---
+
+1607683946.7228518
+    events per second:  7046.49
+         avg:                                  0.85
+
+---
+
+1607683948.7247584
+    events per second:  7025.77
+         avg:                                  0.85
+
+---
+
+1607683950.7287607
+    events per second:  7036.06
+         avg:                                  0.85
+
+---
+
+1607683952.7313085
+    events per second:  7036.84
+         avg:                                  0.85
+
+---
+
+1607683954.7354648
+    events per second:  7050.07
+         avg:                                  0.85
+
+---
+
+1607683956.7395346
+    events per second:  7048.18
+         avg:                                  0.85
+
+---
+
+1607683958.7414737
+    events per second:  7038.09
+         avg:                                  0.85
+
+---
+
+1607683960.7444599
+    events per second:  7043.92
+         avg:                                  0.85
+
+---
+
+1607683962.7464886
+    events per second:  7025.13
+         avg:                                  0.85
+
+---
+
+1607683964.748781
+    events per second:  7034.93
+         avg:                                  0.85
+
+---
+
+1607683966.7510712
+    events per second:  7044.00
+         avg:                                  0.85
+
+---
+
+1607683968.7548227
+    events per second:  7020.18
+         avg:                                  0.85
+
+---
+
+1607683970.7576716
+    events per second:  6889.72
+         avg:                                  0.87
+
+---
+
+1607683972.7622416
+    events per second:  6980.91
+         avg:                                  0.85
+
+---
+
+1607683974.76256
+    events per second:  6861.17
+         avg:                                  0.87
+
+---
+
+1607683976.7641172
+    events per second:  6667.60
+         avg:                                  0.88
+
+---
+
+1607683978.7763464
+    events per second:  6997.79
+         avg:                                  0.85
+
+---
+
+1607683980.7742789
+    events per second:  6517.23
+         avg:                                  0.92
+
+---
+
+1607683981.787676
+    events per second:  6840.75
+         avg:                                  0.87
+
+---
+
+1607683983.790879
+    events per second:  6985.34
+         avg:                                  0.85
+
+---
+
+1607683985.7926242
+    events per second:  6927.78
+         avg:                                  0.86
+
+---
+
+1607683987.7982578
+    events per second:  6947.73
+         avg:                                  0.86
+
+---
+
+1607683989.8085525
+    events per second:  6775.50
+         avg:                                  0.88
+
+---
+
+1607683991.8121512
+    events per second:  6876.59
+         avg:                                  0.87
+
+---
+
+1607683993.8158813
+    events per second:  6968.71
+         avg:                                  0.86
+
+---
+
+1607683995.825296
+    events per second:  6955.66
+         avg:                                  0.86
+
+---
+
+1607683997.826806
+    events per second:  6841.76
+         avg:                                  0.87
+
+---
+
+1607683999.8340573
+    events per second:  6950.63
+         avg:                                  0.86
+
+---
+
+1607684001.8404877
+    events per second:  6900.28
+         avg:                                  0.86
+
+---
+
+1607684003.8435664
+    events per second:  6964.27
+         avg:                                  0.86
+
+---
+
+1607684005.841891
+    events per second:  6824.31
+         avg:                                  0.87
+
+---
+
+1607684007.8498838
+    events per second:  6956.64
+         avg:                                  0.86
+
+---
+
+1607684009.85717
+    events per second:  6991.25
+         avg:                                  0.85
+
+---
+
+1607684011.8597977
+    events per second:  7000.35
+         avg:                                  0.85
+
+---
+
+1607684013.8631158
+    events per second:  6988.18
+         avg:                                  0.85
+
+---
+
+1607684015.8686867
+    events per second:  6958.28
+         avg:                                  0.86
+
+---
+
+1607684017.8707092
+    events per second:  6963.34
+         avg:                                  0.86
+
+---
+
+1607684019.8740468
+    events per second:  7014.80
+         avg:                                  0.85
+
+---
+
+1607684021.8795402
+    events per second:  6973.37
+         avg:                                  0.86
+
+---
+
+1607684023.8846352
+    events per second:  6910.27
+         avg:                                  0.86
+
+---
+
+1607684025.8914855
+    events per second:  6956.03
+         avg:                                  0.86
+
+---
+
+1607684027.8916318
+    events per second:  6968.33
+         avg:                                  0.86
+
+---
+
+1607684029.895411
+    events per second:  6978.36
+         avg:                                  0.85
+
+---
+
+1607684031.9000401
+    events per second:  6853.02
+         avg:                                  0.87
+
+---
+
+1607684033.9041653
+    events per second:  7038.01
+         avg:                                  0.85
+
+---
+
+1607684035.9098227
+    events per second:  7005.00
+         avg:                                  0.85
+
+---
+
+1607684037.911558
+    events per second:  6940.64
+         avg:                                  0.86
+
+---
+
+1607684039.914528
+    events per second:  6956.70
+         avg:                                  0.86
+
+---
+
+1607684041.789463
+    events per second:  6824.82
+         avg:                                  0.87
+
+---
+
+1607684043.7946265
+    events per second:  7014.03
+         avg:                                  0.85
+
+---
+
+1607684045.794122
+    events per second:  6985.99
+         avg:                                  0.85
+
+---
+
+1607684047.800422
+    events per second:  6976.99
+         avg:                                  0.85
+
+---
+
+1607684049.8055103
+    events per second:  6834.96
+         avg:                                  0.87
+
+---
+
+1607684051.8048394
+    events per second:  6963.02
+         avg:                                  0.86
+
+---
+
+1607684053.8085675
+    events per second:  6971.13
+         avg:                                  0.86
+
+---
+
+1607684055.8117323
+    events per second:  6965.36
+         avg:                                  0.86
+
+---
+
+1607684057.8147802
+    events per second:  6900.24
+         avg:                                  0.86
+
+---
+
+1607684059.8187416
+    events per second:  6999.97
+         avg:                                  0.85
+
+---
+
+1607684061.8246472
+    events per second:  7011.64
+         avg:                                  0.85
+
+---
+
+1607684063.8236253
+    events per second:  6954.23
+         avg:                                  0.86
+
+---
+
+1607684065.827644
+    events per second:  6979.36
+         avg:                                  0.85
+
+---
+
+1607684067.8327954
+    events per second:  6930.55
+         avg:                                  0.86
+
+---
+
+1607684069.8329854
+    events per second:  6952.72
+         avg:                                  0.86
+
+---
+
+1607684071.8364933
+    events per second:  6986.85
+         avg:                                  0.85
+
+---
+
+1607684073.838118
+    events per second:  6931.38
+         avg:                                  0.86
+
+---
+
+1607684075.8432164
+    events per second:  6894.44
+         avg:                                  0.87
+
+---
+
+1607684077.8461094
+    events per second:  6928.39
+         avg:                                  0.86
+
+---
+
+1607684079.8519373
+    events per second:  6993.62
+         avg:                                  0.85
+
+---
+
+1607684081.8540483
+    events per second:  6965.77
+         avg:                                  0.86
+
+---
+
+1607684083.854408
+    events per second:  6902.99
+         avg:                                  0.87
+
+---
+
+1607684085.857106
+    events per second:  6888.48
+         avg:                                  0.87
+
+---
+
+1607684087.8606262
+    events per second:  6955.00
+         avg:                                  0.86
+
+---
+
+1607684089.8645465
+    events per second:  6984.47
+         avg:                                  0.85
+
+---
+
+1607684091.868563
+    events per second:  6938.61
+         avg:                                  0.86
+
+---
+
+1607684093.873026
+    events per second:  6987.54
+         avg:                                  0.85
+
+---
+
+1607684095.8777802
+    events per second:  6947.59
+         avg:                                  0.86
+
+---
+
+1607684097.8874564
+    events per second:  6977.61
+         avg:                                  0.85
+
+---
+
+1607684099.879846
+    events per second:  6986.05
+         avg:                                  0.85
+
+---
+
+1607684101.893194
+    events per second:  6849.31
+         avg:                                  0.87
+
+---
+
+1607684103.8997872
+    events per second:  6794.38
+         avg:                                  0.88
+
+---
+
+1607684105.9007418
+    events per second:  6909.98
+         avg:                                  0.86
+
+---
+
+1607684107.905959
+    events per second:  6926.31
+         avg:                                  0.86
+
+---
+
+1607684109.910179
+    events per second:  6683.42
+         avg:                                  0.89
+
+---
+
+1607684111.9111357
+    events per second:  6542.84
+         avg:                                  0.91
+
+---
+
+1607684113.9129276
+    events per second:  6675.62
+         avg:                                  0.89
+
+---
+
+1607684115.9186609
+    events per second:  6808.14
+         avg:                                  0.88
+
+---
+
+1607684117.9193256
+    events per second:  6742.38
+         avg:                                  0.88
+
+---
+
+1607684119.9271817
+    events per second:  6785.78
+         avg:                                  0.88
+
+---
+
+1607684121.9271207
+    events per second:  6802.19
+         avg:                                  0.88
+
+---
+
+1607684123.9325545
+    events per second:  6680.28
+         avg:                                  0.89
+
+---
+
+1607684125.9744542
+    events per second:  6914.94
+         avg:                                  0.86
+
+---
+
+1607684127.9733567
+    events per second:  6808.35
+         avg:                                  0.88
+
+---
+
+1607684129.9755492
+    events per second:  6766.04
+         avg:                                  0.88
+
+---
+
+1607684131.9771824
+    events per second:  7006.18
+         avg:                                  0.85
+
+---
+
+1607684133.9806352
+    events per second:  6991.39
+         avg:                                  0.85
+
+---
+
+1607684135.9838295
+    events per second:  6987.74
+         avg:                                  0.85
+
+---
+
+1607684137.9893582
+    events per second:  7057.33
+         avg:                                  0.85
+
+---
+
+1607684139.9918995
+    events per second:  7074.71
+         avg:                                  0.84
+
+---
+
+1607684141.9960585
+    events per second:  7038.35
+         avg:                                  0.85
+
+---
+
+1607684143.998698
+    events per second:  7060.94
+         avg:                                  0.84
+
+---
+
+1607684146.0014567
+    events per second:  7054.07
+         avg:                                  0.85
+
+---
+
+1607684148.0055299
+    events per second:  7051.00
+         avg:                                  0.85
+
+---
+
+1607684150.0085957
+    events per second:  7055.80
+         avg:                                  0.85
+
+---
+
+1607684152.0104876
+    events per second:  7035.56
+         avg:                                  0.85
+
+---
+
+1607684154.0128944
+    events per second:  7051.12
+         avg:                                  0.85
+
+---
+
+1607684156.0149858
+    events per second:  7034.75
+         avg:                                  0.85
+
+---
+
+1607684158.018048
+    events per second:  7063.05
+         avg:                                  0.84
+
+---
+
+1607684160.0214033
+    events per second:  7052.34
+         avg:                                  0.85
+
+---
+
+1607684161.8974662
+    events per second:  7096.46
+         avg:                                  0.84
+
+---
+
+1607684163.9022002
+    events per second:  7065.37
+         avg:                                  0.84
+
+---
+
+1607684165.904307
+    events per second:  7052.66
+         avg:                                  0.85
+
+---
+
+1607684167.9068882
+    events per second:  7039.63
+         avg:                                  0.85
+
+---
+
+1607684169.9096236
+    events per second:  7036.90
+         avg:                                  0.85
+
+---
+
+1607684171.9132702
+    events per second:  7045.23
+         avg:                                  0.85
+
+---
+
+1607684173.915209
+    events per second:  7044.65
+         avg:                                  0.85
+
+---
+
+1607684175.9181874
+    events per second:  7036.89
+         avg:                                  0.85
+
+---
+
+1607684177.9205751
+    events per second:  7036.81
+         avg:                                  0.85
+
+---
+
+1607684179.9224913
+    events per second:  7059.52
+         avg:                                  0.85
+
+---
+
+1607684181.9255478
+    events per second:  7031.17
+         avg:                                  0.85
+
+---
+
+1607684183.9285085
+    events per second:  7014.85
+         avg:                                  0.85
+
+---
+
+1607684185.9336514
+    events per second:  7037.87
+         avg:                                  0.85
+
+---
+
+1607684187.9373968
+    events per second:  7036.20
+         avg:                                  0.85
+
+---
+
+1607684189.9408991
+    events per second:  7041.03
+         avg:                                  0.85
+
+---
+
+1607684191.9450173
+    events per second:  7045.53
+         avg:                                  0.85
+
+---
+
+1607684193.946944
+    events per second:  7041.14
+         avg:                                  0.85
+
+---
+
+1607684195.9506521
+    events per second:  7036.44
+         avg:                                  0.85
+
+---
+
+1607684197.952793
+    events per second:  7042.26
+         avg:                                  0.85
+
+---
+
+1607684199.9567122
+    events per second:  7042.14
+         avg:                                  0.85
+
+---
+
+1607684201.959798
+    events per second:  7039.87
+         avg:                                  0.85
+
+---
+
+1607684203.964253
+    events per second:  7028.29
+         avg:                                  0.85
+
+---
+
+1607684205.9671142
+    events per second:  7031.81
+         avg:                                  0.85
+
+---
+
+1607684207.9700336
+    events per second:  7055.24
+         avg:                                  0.85
+
+---
+
+1607684209.9735255
+    events per second:  7050.52
+         avg:                                  0.85
+
+---
+
+1607684211.975258
+    events per second:  7037.50
+         avg:                                  0.85
+
+---
+
+1607684213.978678
+    events per second:  7094.51
+         avg:                                  0.84
+
+---
+
+1607684215.9817777
+    events per second:  7075.13
+         avg:                                  0.84
+
+---
+
+1607684217.983927
+    events per second:  7029.83
+         avg:                                  0.85
+
+---
+
+1607684219.9881864
+    events per second:  7056.95
+         avg:                                  0.85
+
+---
+
+1607684222.005209
+    events per second:  7041.55
+         avg:                                  0.85
+
+---
+
+1607684224.007776
+    events per second:  7036.18
+         avg:                                  0.85
+
+---
+
+1607684226.01156
+    events per second:  7044.34
+         avg:                                  0.85
+
+---
+
+1607684228.0151653
+    events per second:  7030.31
+         avg:                                  0.85
+
+---
+
+1607684230.0180466
+    events per second:  7053.27
+         avg:                                  0.85
+
+---
+
+1607684232.0211906
+    events per second:  7034.75
+         avg:                                  0.85
+
+---
+
+1607684234.0245726
+    events per second:  7061.07
+         avg:                                  0.84
+
+---
+
+1607684236.0278914
+    events per second:  6920.18
+         avg:                                  0.86
+
+---
+
+1607684238.0303652
+    events per second:  7042.87
+         avg:                                  0.85
+
+---
+
+1607684240.0361087
+    events per second:  7047.25
+         avg:                                  0.85
+
+---
+
+1607684242.0388103
+    events per second:  7049.52
+         avg:                                  0.85
+
+---
+
+1607684244.0410945
+    events per second:  7033.38
+         avg:                                  0.85
+
+---
+
+1607684246.045012
+    events per second:  7006.76
+         avg:                                  0.85
+
+---
+
+1607684248.0468261
+    events per second:  7053.53
+         avg:                                  0.85
+
+---
+
+1607684250.0507445
+    events per second:  7040.82
+         avg:                                  0.85
+
+---
+
+1607684252.0548394
+    events per second:  7050.02
+         avg:                                  0.85
+
+---
+
+1607684254.0587077
+    events per second:  7035.89
+         avg:                                  0.85
+
+---
+
+1607684256.0622134
+    events per second:  7058.04
+         avg:                                  0.85
+
+---
+
+1607684258.0635102
+    events per second:  7042.28
+         avg:                                  0.85
+
+---
+
+1607684260.0696943
+    events per second:  6999.38
+         avg:                                  0.85
+
+---
+
+1607684262.05394
+    events per second:  6891.77
+         avg:                                  0.87
+
+---
+
+1607684264.0743387
+    events per second:  6903.41
+         avg:                                  0.86
+
+---
+
+1607684266.0783384
+    events per second:  6926.36
+         avg:                                  0.86
+
+---
+
+1607684268.0829778
+    events per second:  6419.22
+         avg:                                  0.93
+
+---
+
+1607684270.0910075
+    events per second:  7051.34
+         avg:                                  0.85
+
+---
+
+1607684272.090149
+    events per second:  6656.81
+         avg:                                  0.90
+
+---
+
+1607684274.0928051
+    events per second:  6923.10
+         avg:                                  0.86
+
+---
+
+1607684276.0960748
+    events per second:  6989.56
+         avg:                                  0.85
+
+---
+
+1607684278.1010935
+    events per second:  6948.08
+         avg:                                  0.86
+
+---
+
+1607684280.105006
+    events per second:  6982.04
+         avg:                                  0.85
+
+---
+
+1607684282.003098
+    events per second:  6948.38
+         avg:                                  0.86
+
+---
+
+1607684284.0077963
+    events per second:  6972.47
+         avg:                                  0.86
+
+---
+
+1607684286.0135741
+    events per second:  6960.88
+         avg:                                  0.86
+
+---
+
+1607684288.0166914
+    events per second:  7000.39
+         avg:                                  0.85
+
+---
+
+1607684290.0178916
+    events per second:  6974.51
+         avg:                                  0.86
+
+---
+
+1607684292.0225923
+    events per second:  7015.75
+         avg:                                  0.85
+
+---
+
+1607684294.0269938
+    events per second:  6746.68
+         avg:                                  0.88
+
+---
+
+1607684296.0295591
+    events per second:  6978.51
+         avg:                                  0.85
+
+---
+
+1607684298.0314524
+    events per second:  6982.38
+         avg:                                  0.85
+
+---
+
+1607684300.0376875
+    events per second:  7002.28
+         avg:                                  0.85
+
+---
+
+1607684302.0413833
+    events per second:  6996.60
+         avg:                                  0.85
+
+---
+
+1607684304.044795
+    events per second:  7007.36
+         avg:                                  0.85
+
+---
+
+1607684306.044881
+    events per second:  6994.25
+         avg:                                  0.85
+
+---
+
+1607684308.0504687
+    events per second:  6919.94
+         avg:                                  0.86
+
+---
+
+1607684310.0554404
+    events per second:  6953.34
+         avg:                                  0.86
+
+---
+
+1607684312.0572813
+    events per second:  6989.37
+         avg:                                  0.85
+
+---
+
+1607684314.0594354
+    events per second:  6987.16
+         avg:                                  0.85
+
+---
+
+1607684316.0642128
+    events per second:  7006.11
+         avg:                                  0.85
+
+---
+
+1607684318.0658703
+    events per second:  7011.22
+         avg:                                  0.85
+
+---
+
+1607684320.0697536
+    events per second:  6977.59
+         avg:                                  0.85
+
+---
+
+1607684322.0738275
+    events per second:  7021.11
+         avg:                                  0.85
+
+---
+
+1607684324.0775285
+    events per second:  6968.13
+         avg:                                  0.86
+
+---
+
+1607684326.0823567
+    events per second:  7003.04
+         avg:                                  0.85
+
+---
+
+1607684328.0851462
+    events per second:  7017.08
+         avg:                                  0.85
+
+---
+
+1607684330.0866652
+    events per second:  6992.15
+         avg:                                  0.85
+
+---
+
+1607684332.0923412
+    events per second:  6979.33
+         avg:                                  0.85
+
+---
+
+1607684334.0957932
+    events per second:  6990.21
+         avg:                                  0.85
+
+---
+
+1607684336.101396
+    events per second:  6999.42
+         avg:                                  0.85
+
+---
+
+1607684338.1042528
+    events per second:  6995.60
+         avg:                                  0.85
+
+---
+
+1607684340.105016
+    events per second:  7003.22
+         avg:                                  0.85
+
+---
+
+1607684341.1209009
+    events per second:  7058.44
+         avg:                                  0.85
+
+---
+
+1607684343.1270134
+    events per second:  6968.61
+         avg:                                  0.86
+
+---
+
+1607684345.1260865
+    events per second:  6977.28
+         avg:                                  0.86
+
+---
+
+1607684347.133363
+    events per second:  6964.88
+         avg:                                  0.86
+
+---
+
+1607684349.1325452
+    events per second:  7006.97
+         avg:                                  0.85
+
+---
+
+1607684351.136449
+    events per second:  6911.83
+         avg:                                  0.86
+
+---
+
+1607684353.144397
+    events per second:  6968.96
+         avg:                                  0.86
+
+---
+
+1607684355.156123
+    events per second:  6989.31
+         avg:                                  0.85
+
+---
+
+1607684357.1476345
+    events per second:  6945.69
+         avg:                                  0.86
+
+---
+
+1607684359.1490073
+    events per second:  6998.59
+         avg:                                  0.85
+
+---
+
+1607684361.153278
+    events per second:  6994.28
+         avg:                                  0.85
+
+---
+
+1607684363.1572998
+    events per second:  6891.75
+         avg:                                  0.87
+
+---
+
+1607684365.1623695
+    events per second:  6996.59
+         avg:                                  0.85
+
+---
+
+1607684367.1658463
+    events per second:  6852.28
+         avg:                                  0.87
+
+---
+
+1607684369.1663747
+    events per second:  6970.49
+         avg:                                  0.86
+
+---
+
+1607684371.1717534
+    events per second:  6997.71
+         avg:                                  0.86
+
+---
+
+1607684373.1754696
+    events per second:  6981.54
+         avg:                                  0.85
+
+---
+
+1607684375.1785753
+    events per second:  6999.46
+         avg:                                  0.85
+
+---
+
+1607684377.1788113
+    events per second:  6950.17
+         avg:                                  0.86
+
+---
+
+1607684379.1849942
+    events per second:  6944.47
+         avg:                                  0.86
+
+---
+
+1607684381.1889136
+    events per second:  6993.84
+         avg:                                  0.85
+
+---
+
+1607684383.1941848
+    events per second:  6950.43
+         avg:                                  0.86
+
+---
+
+1607684385.1928465
+    events per second:  6880.44
+         avg:                                  0.87
+
+---
+
+1607684387.1984112
+    events per second:  6947.25
+         avg:                                  0.86
+
+---
+
+1607684389.202315
+    events per second:  6963.04
+         avg:                                  0.86
+
+---
+
+1607684391.2026865
+    events per second:  6976.37
+         avg:                                  0.86
+
+---
+
+1607684393.208304
+    events per second:  7014.01
+         avg:                                  0.85
+
+---
+
+1607684395.2117457
+    events per second:  6786.69
+         avg:                                  0.88
+
+---
+
+1607684397.212172
+    events per second:  6858.42
+         avg:                                  0.87
+
+---
+
+1607684399.219008
+    events per second:  6777.41
+         avg:                                  0.88
+
+---
+
+1607684401.1208894
+    events per second:  6577.99
+         avg:                                  0.90
+
+---
+
+1607684403.12615
+    events per second:  6625.45
+         avg:                                  0.90
+
+---
+
+1607684405.1270988
+    events per second:  6725.33
+         avg:                                  0.89
+
+---
+
+1607684407.1311512
+    events per second:  6747.25
+         avg:                                  0.88
+
+---
+
+1607684409.1363745
+    events per second:  6670.21
+         avg:                                  0.89
+
+---
+
+1607684411.135956
+    events per second:  6761.02
+         avg:                                  0.88
+
+---
+
+1607684413.1348345
+    events per second:  6708.94
+         avg:                                  0.89
+
+---
+
+1607684415.145133
+    events per second:  6716.69
+         avg:                                  0.89
+
+---
+
+1607684417.1404605
+    events per second:  6212.12
+         avg:                                  0.96
+
+---
+
+1607684419.1535213
+    events per second:  6795.80
+         avg:                                  0.88
+
+---
+
+1607684421.1571484
+    events per second:  6757.26
+         avg:                                  0.88
+
+---
+
+1607684423.1570127
+    events per second:  6957.48
+         avg:                                  0.86
+
+---
+
+1607684425.1605923
+    events per second:  7004.84
+         avg:                                  0.85
+
+---
+
+1607684427.1647148
+    events per second:  7020.68
+         avg:                                  0.85
+
+---
+
+1607684429.1673307
+    events per second:  6886.65
+         avg:                                  0.87
+
+---
+
+1607684431.1729167
+    events per second:  7054.76
+         avg:                                  0.85
+
+---
+
+1607684433.1767633
+    events per second:  7040.11
+         avg:                                  0.85
+
+---
+
+1607684435.1795511
+    events per second:  7040.24
+         avg:                                  0.85
+
+---
+
+1607684437.1823592
+    events per second:  7049.89
+         avg:                                  0.85
+
+---
+
+1607684439.1864169
+    events per second:  7052.10
+         avg:                                  0.85
+
+---
+
+1607684441.1900277
+    events per second:  7048.06
+         avg:                                  0.85
+
+---
+
+1607684443.1927352
+    events per second:  7067.83
+         avg:                                  0.84
+
+---
+
+1607684445.1964943
+    events per second:  7069.16
+         avg:                                  0.84
+
+---
+
+1607684447.199796
+    events per second:  7061.37
+         avg:                                  0.84
+
+---
+
+1607684449.2029762
+    events per second:  7039.58
+         avg:                                  0.85
+
+---
+
+1607684451.2061183
+    events per second:  6976.60
+         avg:                                  0.85
+
+---
+
+1607684453.2091541
+    events per second:  7035.97
+         avg:                                  0.85
+
+---
+
+1607684455.2132664
+    events per second:  7038.25
+         avg:                                  0.85
+
+---
+
+1607684457.215467
+    events per second:  6911.06
+         avg:                                  0.86
+
+---
+
+1607684459.2179997
+    events per second:  7045.76
+         avg:                                  0.85
+
+---
+
+1607684461.2322063
+    events per second:  6919.99
+         avg:                                  0.86
+
+---
+
+1607684463.2349625
+    events per second:  7064.66
+         avg:                                  0.84
+
+---
+
+1607684465.237924
+    events per second:  7051.06
+         avg:                                  0.85
+
+---
+
+1607684467.2411592
+    events per second:  6943.78
+         avg:                                  0.86
+
+---
+
+1607684469.243804
+    events per second:  7041.15
+         avg:                                  0.85
+
+---
+
+1607684471.247255
+    events per second:  7051.94
+         avg:                                  0.85
+
+---
+
+1607684473.250186
+    events per second:  7049.20
+         avg:                                  0.85
+
+---
+
+1607684475.252655
+    events per second:  7039.17
+         avg:                                  0.85
+
+---
+
+1607684477.257456
+    events per second:  7064.52
+         avg:                                  0.84
+
+---
+
+1607684479.259122
+    events per second:  7028.36
+         avg:                                  0.85
+
+---
+
+1607684481.262509
+    events per second:  7052.77
+         avg:                                  0.85
+
+---
+
+1607684483.2660983
+    events per second:  7044.64
+         avg:                                  0.85
+
+---
+
+1607684485.2684379
+    events per second:  7019.60
+         avg:                                  0.85
+
+---
+
+1607684487.2726536
+    events per second:  7053.34
+         avg:                                  0.85
+
+---
+
+1607684489.2755551
+    events per second:  6878.85
+         avg:                                  0.87
+
+---
+
+1607684491.28058
+    events per second:  7043.42
+         avg:                                  0.85
+
+---
+
+1607684493.283536
+    events per second:  7035.95
+         avg:                                  0.85
+
+---
+
+1607684495.2873178
+    events per second:  7003.45
+         avg:                                  0.85
+
+---
+
+1607684497.2837954
+    events per second:  7050.34
+         avg:                                  0.85
+
+---
+
+1607684499.2937636
+    events per second:  7011.30
+         avg:                                  0.85
+
+---
+
+1607684501.2965899
+    events per second:  6990.95
+         avg:                                  0.85
+
+---
+
+1607684503.3002455
+    events per second:  7030.10
+         avg:                                  0.85
+
+---
+
+1607684505.302558
+    events per second:  7050.36
+         avg:                                  0.85
+
+---
+
+1607684507.3075461
+    events per second:  7041.93
+         avg:                                  0.85
+
+---
+
+1607684509.308317
+    events per second:  7050.43
+         avg:                                  0.85
+
+---
+
+1607684511.3134189
+    events per second:  7055.43
+         avg:                                  0.85
+
+---
+
+1607684513.3192806
+    events per second:  7045.12
+         avg:                                  0.85
+
+---
+
+1607684515.3214931
+    events per second:  7048.95
+         avg:                                  0.85
+
+---
+
+1607684517.3257353
+    events per second:  7046.32
+         avg:                                  0.85
+
+---
+
+1607684519.3267336
+    events per second:  7025.19
+         avg:                                  0.85
+
+---
+
+1607684521.2353306
+    events per second:  7095.30
+         avg:                                  0.84
+
+---
+
+1607684523.2392337
+    events per second:  7061.16
+         avg:                                  0.84
+
+---
+
+1607684525.2424653
+    events per second:  7061.25
+         avg:                                  0.84
+
+---
+
+1607684527.2445712
+    events per second:  7064.37
+         avg:                                  0.84
+
+---
+
+1607684529.248326
+    events per second:  7062.56
+         avg:                                  0.84
+
+---
+
+1607684531.2512543
+    events per second:  7041.76
+         avg:                                  0.85
+
+---
+
+1607684533.2536523
+    events per second:  7043.07
+         avg:                                  0.85
+
+---
+
+1607684535.2562616
+    events per second:  7043.77
+         avg:                                  0.85
+
+---
+
+1607684537.2587497
+    events per second:  7057.74
+         avg:                                  0.85
+
+---
+
+1607684539.261281
+    events per second:  7055.75
+         avg:                                  0.85
+
+---
+
+1607684541.2644677
+    events per second:  7015.72
+         avg:                                  0.85
+
+---
+
+1607684543.27131
+    events per second:  7046.13
+         avg:                                  0.85
+
+---
+
+1607684545.272032
+    events per second:  6999.43
+         avg:                                  0.85
+
+---
+
+1607684547.275621
+    events per second:  7026.25
+         avg:                                  0.85
+
+---
+
+1607684549.279237
+    events per second:  6976.40
+         avg:                                  0.86
+
+---
+
+1607684551.2830508
+    events per second:  7029.86
+         avg:                                  0.85
+
+---

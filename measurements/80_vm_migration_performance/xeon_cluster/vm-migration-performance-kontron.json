@@ -1,0 +1,30 @@
+[
+    {
+        "iteration": 1,
+        "start_server": "kontron2",
+        "dest_server": "kontron1",
+        "start_time": 1607683965,
+        "end_time": 1607683983
+    },
+    {
+        "iteration": 2,
+        "start_server": "kontron1",
+        "dest_server": "kontron2",
+        "start_time": 1607684105,
+        "end_time": 1607684135
+    },
+    {
+        "iteration": 3,
+        "start_server": "kontron2",
+        "dest_server": "kontron1",
+        "start_time": 1607684257,
+        "end_time": 1607684275
+    },
+    {
+        "iteration": 4,
+        "start_server": "kontron1",
+        "dest_server": "kontron2",
+        "start_time": 1607684397,
+        "end_time": 1607684426
+    }
+]

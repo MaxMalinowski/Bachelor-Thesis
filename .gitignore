@@ -1,0 +1,23 @@
+# ignore all tex auxilary files
+*.aux
+*.xml
+*.lof
+*.log
+*.lot
+*.gz
+*.toc
+*.bbl
+*.blig
+*.out
+*.lol
+
+# ignore mac files
+*.DS_Store
+
+# ignore vscode files
+*.vscode
+
+# ignore minted directory
+_minted-BA-Thesis/
+_minted-BA-Thesis-Digital/
+_minted-BA-Thesis-Print/

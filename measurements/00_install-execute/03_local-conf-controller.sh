@@ -1,0 +1,13 @@
+[[local|localrc]]
+PUBLIC_INTERFACE="eth0"
+HOST_IP="10.1.1.100"
+FLOATING_RANGE="10.1.1.0/24"
+PUBLIC_NETWORK_GATEWAY="10.1.1.1"
+Q_FLOATING_ALLOCATION_POOL="start='10.1.1.200',end='10.1.1.254'"
+
+LOGFILE="/opt/stack/logs/stack.sh.log"
+
+ADMIN_PASSWORD="adminpass"
+DATABASE_PASSWORD="adminpass"
+RABBIT_PASSWORD="adminpass"
+SERVICE_PASSWORD="adminpass"

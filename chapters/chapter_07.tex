@@ -1,0 +1,124 @@
+\chapter{Conclusion}
+\label{chapter:conclusion}
+    
+    This thesis's main research objective was to determine whether the Cloud Computing advantages of OpenStack can be leveraged on embedded automotive hardware.
+    The first challenge was the installation process and successful execution of OpenStack on such hardware.
+    As systems like the Renesas R-Car \ac{SoC} are not intended for such usage, the installation process poses difficulties.
+    Due to custom kernels and \acp{OS}, crucial packages and kernel modules for OpenStacks's functionality might not be available, leading to the necessity of an extended kernel and \ac{OS}, as described in Chapter \ref{chapter:host_and_Test_setup}.
+    
+    
+    \noindent After a successful installation of OpenStack, two aspects were examined in order to provide a comprehensive answer to the main research question:
+    First, the overhead and the impact of OpenStack were examined.
+    Through performing dedicated measurements on the \ac{CPU}, memory, network, and storage as described in Chapter \ref{chapter:methodology}, the performance degradation through OpenStack as a middleware was examined.
+    Summarizing the overhead results, OpenStack indeed introduces an overhead.
+    However, the overhead is lower if the hardware is more powerful.
+    This leads to low and acceptable overheads on the Xeon platform, while the R-Car platform suffers greater impacts.
+    Especially the R-Car's big.LITTLE architecture, low memory, and low secondary storage performance, mainly lower OpenStacks performance.
+    However, introducing hardware with minor changes like more \ac{CPU}-cores, faster secondary storage, or more memory could presumably suffice to achieve acceptable and Xeon-like results.\\
+    Second, two advantages of Cloud Computing and OpenStack were examined in greater detail: VM distribution and VM migration.
+    Both advantages can introduce benefits for the automotive area.
+    Considering the VM distribution, it was found that OpenStack distributes VMs according to defined rules reliable and without errors on both tested platforms.
+    As for the VM migration, also on both platforms, the live-migration was shown to happen reliably.
+    However, the used ARM platform has too small resources to deliver a good performance and is therefore not suitable for such a use case, as found in Section \ref{section:usecases_application} and Figure \ref{figure:use_case_migration}.
+    Although all performed tests succeeded and no wrong functionality was found, the performance was too low to enable the actual usage.
+    The x86 platform, on the other hand, delivers excellent performance.
+    Considering the live-migration, even using the highest possible VM configuration, it delivers very high performance, suggesting an actual in-vehicle usage.
+    
+    \noindent Concluding from all measurements performed, OpenStack is basically executable on automotive embedded hardware.
+    Despite the overhead on all examined resources, OpenStack runs as stable on the R-Car SoCs as on the Xeon CPUs.
+    While the overhead in some cases is non-negligible, all measurements were performed on a DevStack environment without any optimization towards better performance.
+    As this thesis's scope covers only the basic functionality of an OpenStack cluster, the chosen advantages of VM distribution and migration were reliably available.
+    Considering the main research question, \textbf{Is it possible to leverage the advantages of Cloud Computing on embedded hardware?}, it can be answered with a \textbf{yes}.
+    Although the ARM platform shows deficient performance, it also shows that OpenStack is functional on such hardware, even with a Preempt-RT kernel patch.
+    
+    
+    \section{Further Work and Outlook}
+    \label{section:further_work}
+        
+        Gathered an answer, however, further tests are suggested to gain even more knowledge and confidence.
+        Considering the performed tests, they should be extended regarding three areas:
+        
+        \begin{itemize}
+        
+             \item First and foremost, an installation without DevStack should be performed.
+            Apart from unnecessary configurations and software, a better configuration of relevant settings could already improve the results.
+            
+            \item Second, the tests should be extended to a broader range of hardware, especially ARM hardware.
+            Having compared a high-performance x86-based platform to an efficiency-focused big.LITTLE ARM-based SoC reduces both platforms' comparability and possibly introduces bottlenecks on the ARM platform due to insufficient resources.
+            An interesting candidate would be the \textsl{NXP Layerscape LX2160A} processor\footnote{NXP LX2160A Processor: https://tinyurl.com/yxe26f2t \cite{NXP2021}} with 16 cores and no big.LITTLE architecture.
+            Also, performing the test in a real-world environment with real automotive applications or benchmarks could further reveal undiscovered insights.
+           
+           \item Third and last, the OpenStack cluster should be optimized.
+            The performed tests were executed on an out-of-the-box DevStack installation.
+            Optimizing the cluster towards better network performance, higher computational performance, and faster storage solutions could significantly influence the results.
+        
+        \end{itemize}
+        
+        \noindent Besides extending the performed tests, also other, in this thesis not covered areas need to be studied.
+        While the R-Car \acp{SoC} are running a kernel with a real-time patch, the specific real-time behavior was out of scope for this thesis.
+        Proving that OpenStack and its VMs guarantee  an in-time execution of tasks and therefore provide real-time capabilities would open the possibility the execute real-time applications inside VMs.
+        Through this, OpenStack could introduce even more value as a middleware.\\
+        Besides handling computational tasks, today's ECUs must interact with various bus systems.
+        Considering OpenStack as a middleware on multiple ECUs to execute crucial tasks inside VMs, some data exchange with, for example, sensors must happen.
+        Although the Ethernet standard is already present in modern vehicles and the communication via IP-addresses is common, other bus systems will undoubtedly remain due to various factors like costs.
+        As determinism, and therefore real-time capability, is also a crucial factor in some bus systems, real-time capable VMs would here as well be necessary, as well as a reliable and performant data exchange with other bus systems.\\
+        Further, a topic not considered by this thesis is the usage of hardware acceleration. 
+        Especially with, for example, image processing or machine learning, the necessity for graphical processing units is becoming increasingly critical.
+        OpenStack enables VMs the usage of GPUs via PCI-passthrough.
+        Here again, the usability in terms of reliability and performance would have to be evaluated.
+        
+        \noindent Apart from the performance and possibilities of OpenStack, the actual usage and the structure of such a cluster would have to be evaluated.
+        First, contrary to this thesis, in a real-world deployment of such a cluster, multiple \acp{VM} would be active concurrently.
+        Due to an individual  management overhead for each \ac{VM}, the total overhead could be located in completely different dimensions.
+        Second, countless different options exist how such a cluster could be organized.
+        The major drawback of the cluster used throughout this thesis is the single point of failure, introduced by the core services' single presence.
+        A malfunction or failure of one core service, like Neutron, or the whole controller node would lead to a non-functional cluster and, therefore, a complete failure of all \acp{VM} and their applications.
+        Hence the question arises, what kind of architecture would be suitable in order to guarantee a reliable operation with efficient resource usage.
+        As the core services are critical for a functional OpenStack cluster, a double presence of those services on the cluster would seem reasonable to eliminate the single point of failure.
+                   
+        \noindent Looking further into a future with vehicles commonly running local private clouds, also new topics arise.
+        Having entirely decoupled the software from the hardware, VMs can be executed anywhere and perform any task.
+        With bigger clouds in the backend, this introduces the possibility of offloading VMs into the backend and performing the actual computing there.
+        Using technologies like 5G, calculations could happen in the more powerful backend, leaving the vehicle's ECUs with as little power consumption as possible.
+        This enables the inspection of the vehicle as a participant in a multiaccess edge computing cluster.
+        Instead of completely offloading VMs or applications to other clouds in the backend, the vehicle could act as an edge node, preprocessing specific data locally before sending them to other networks and clouds.
+        This would genuinely enable to deal with the \textsl{how} to compute, instead of the \textsl{where} to compute.
+        
+        
+    \section{Review}
+    \label{section:review}
+        
+        All initial goals of this thesis were achieved and implemented.
+        An OpenStack cluster was successfully installed and executed on automotive embedded hardware.
+        The knowledge gained will be used to further examine Cloud Computing and OpenStack's capabilities for in-vehicle usage. \\
+        Regarding the initial schedule, it could not be totally met.
+        This is mainly due to the installation process of OpenStack on the ARM platform.
+        The usage of Yocto was not known in advance and therefore not considered in the initial planning.
+        Because of Yocto's complexity, the unsuitability of the OpenStack recipes was only detected after four weeks.
+        The discovery of using Ubuntu on the R-Car nevertheless enabled the installation of OpenStack.
+        Through the usage of DevStack, the overall installation process could be accelerated and simplified.
+        Still, the according kernel and ATF configuration took more time than anticipated, leading to a delayed start of the measurements.
+        
+       \noindent The execution of the measurements progressed as planned.
+       However, the incomparability of the chosen platforms quickly emerged. 
+       The limited time frame and the unavailability of according hardware prevented the evaluation of further, more comparable platforms.
+       Also, the again specific installation process on other hardware has additionally hindered other platforms' consideration. 
+       An earlier in-depth review, along with more time and initial tests, could have revealed this property, enabling the use of additional hardware for more confident results.
+       
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        

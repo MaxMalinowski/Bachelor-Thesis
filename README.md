@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/334078618.svg)](https://zenodo.org/badge/latestdoi/334078618)
+
 # Abstract
 Cloud Computing is already in extensive use by many car manufacturers in their backend, providing scalability, performance, and availability. 
 However, the in-vehicle software is still definitely bound and statically executed on particular hardware. 

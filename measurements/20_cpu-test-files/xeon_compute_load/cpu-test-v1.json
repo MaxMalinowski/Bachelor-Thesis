@@ -1,0 +1,18 @@
+
+
+{
+    "title": "cpu-test-v1",
+    "results": [
+        {
+            "test": "pts\/build-linux-kernel-1.10.2",
+            "arguments": "Time To Compile",
+            "units": "Seconds",
+            "results": {
+                "cpu-test-v1": {
+                    "value": "49.316",
+                    "all_results": "52.761:49.013:48.162:48.276:49.707:48.746:48.962:48.898"
+                }
+            }
+        }
+    ]
+}

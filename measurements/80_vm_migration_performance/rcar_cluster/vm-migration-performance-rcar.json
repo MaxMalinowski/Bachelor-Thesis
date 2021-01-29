@@ -1,0 +1,30 @@
+[
+    {
+        "iteration": 1,
+        "start_server": "rcar1",
+        "dest_server": "rcar2",
+        "start_time": 1607681283,
+        "end_time": 1607681388
+    },
+    {
+        "iteration": 2,
+        "start_server": "rcar2",
+        "dest_server": "rcar1",
+        "start_time": 1607681511,
+        "end_time": 1607681661
+    },
+    {
+        "iteration": 3,
+        "start_server": "rcar1",
+        "dest_server": "rcar2",
+        "start_time": 1607681783,
+        "end_time": 1607681884
+    },
+    {
+        "iteration": 4,
+        "start_server": "rcar2",
+        "dest_server": "rcar1",
+        "start_time": 1607682007,
+        "end_time": 1607682105
+    }
+]

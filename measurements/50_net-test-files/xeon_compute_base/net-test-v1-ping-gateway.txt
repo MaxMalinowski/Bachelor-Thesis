@@ -1,0 +1,3 @@
+--- 10.1.1.1 ping statistics ---
+100 packets transmitted, 100 received, 0% packet loss, time 101382ms
+rtt min/avg/max/mdev = 0.271/0.345/0.460/0.041 ms

@@ -1,0 +1,9 @@
+[
+    {
+        "iteration": 1,
+        "start_server": "kontron2",
+        "dest_server": "kontron1",
+        "start_time": 1610366675,
+        "end_time": 1610366710
+    }
+]

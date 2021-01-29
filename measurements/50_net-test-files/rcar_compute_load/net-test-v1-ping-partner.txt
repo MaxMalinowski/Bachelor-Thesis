@@ -1,0 +1,3 @@
+--- 10.1.1.100 ping statistics ---
+100 packets transmitted, 100 received, 0% packet loss, time 99191ms
+rtt min/avg/max/mdev = 0.884/0.588/3.346/0.289 ms
